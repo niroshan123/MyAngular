@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { RedComponent } from './red/red.component';
-import { GreenComponent } from './green/green.component';
-import { YellowComponent } from './yellow/yellow.component';
+// import { RedComponent } from './red/red.component';
+// import { GreenComponent } from './green/green.component';
+// import { YellowComponent } from './yellow/yellow.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    RedComponent,
-    GreenComponent,
-    YellowComponent
+    // RedComponent,
+    // GreenComponent,
+    // YellowComponent
   ],
   imports: [
     BrowserModule
