@@ -1,6 +1,10 @@
 <!-- <app-red></app-red>
 <app-green></app-green>
 <app-yellow></app-yellow> -->
-<!-- <input type="text" placeholder="Server Name"> -->
+<h2>Enter Server Information</h2>
+<input type="text" placeholder="Server Name" [(ngModel)]="serverName">
+
+<h2>Display Server Information</h2>
+
 <p>Hey Im {{serverName}} with {{serverId}} & {{serverStatus}}</p>
 <button [disabled]="buttonStatus" (click)="toggle()" >Property Binding</button>
