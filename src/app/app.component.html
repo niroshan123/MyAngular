@@ -1,10 +1,14 @@
 <!-- <app-red></app-red>
 <app-green></app-green>
 <app-yellow></app-yellow> -->
-<h2>Enter Server Information</h2>
+<!-- <h2>Enter Server Information</h2>
 <input type="text" placeholder="Server Name" [(ngModel)]="serverName">
 
 <h2>Display Server Information</h2>
 
 <p>Hey Im {{serverName}} with {{serverId}} & {{serverStatus}}</p>
-<button [disabled]="buttonStatus" (click)="toggle()" >Property Binding</button>
+<button [disabled]="buttonStatus" (click)="toggle()" >Property Binding</button> -->
+
+<input type="text" placeholder="FirstName" [(ngModel)]=firstName>
+<h3>Hey My First Name is {{firstName}}</h3>
+<button [disabled]= "btn()" (click)="blank()">Submit</button>

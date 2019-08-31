@@ -8,28 +8,46 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  serverName="Niroshan_Ratnayake";
-  serverId=1234567;
-  serverStatus='Offline';
-  statusFlag=false;
-  buttonStatus=true;
+  // serverName="Niroshan_Ratnayake";
+  // serverId=1234567;
+  // serverStatus='Offline';
+  // statusFlag=false;
+  // buttonStatus=true;
 
-  constructor(){
-    setTimeout(()=>{
+  // constructor(){
+  //   setTimeout(()=>{
 
-      this.buttonStatus=false;
-    },2500);
+  //     this.buttonStatus=false;
+  //   },2500);
+  // }
+  // toggle(){
+  //   this.statusFlag=!this.statusFlag;
+  //   if(this.statusFlag===true){
+  //     this.serverStatus='Online';
+  //   }
+  //   else{
+  //     this.serverStatus='Offline';
+  //   }
+  //   return this.serverStatus;
+  // }
+
+  firstName='';
+  
+
+
+  btn(){
+    if(this.firstName==='')
+    return true;
+    else
+    return false;
+
   }
-  toggle(){
-    this.statusFlag=!this.statusFlag;
-    if(this.statusFlag===true){
-      this.serverStatus='Online';
-    }
-    else{
-      this.serverStatus='Offline';
-    }
-    return this.serverStatus;
-  }
+
+blank(){
+  this.firstName="";
+   return this.firstName;
+  
+}
 
   
  
