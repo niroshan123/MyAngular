@@ -12,21 +12,26 @@ export class AppComponent {
   serverId=1234567;
   serverStatus='Offline';
   statusFlag=false;
-
-  toggle(){
-    this.statusFlag=!this.statusFlag;
-    if(this.statusFlag===true){
-      this.serverStatus='Online'
-    }
-    return this.serverStatus;
-  }
-
   buttonStatus=true;
+
   constructor(){
     setTimeout(()=>{
 
       this.buttonStatus=false;
     },2500);
   }
+  toggle(){
+    this.statusFlag=!this.statusFlag;
+    if(this.statusFlag===true){
+      this.serverStatus='Online';
+    }
+    else{
+      this.serverStatus='Offline';
+    }
+    return this.serverStatus;
+  }
+
+  
+ 
 
 }

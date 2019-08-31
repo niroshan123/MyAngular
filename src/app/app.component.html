@@ -1,5 +1,6 @@
 <!-- <app-red></app-red>
 <app-green></app-green>
 <app-yellow></app-yellow> -->
-<p>Hey Im {{serverName}} with {{serverId}} & {{toggle()}}</p>
-<button [disabled]=buttonStatus>Property Binding</button>
+<!-- <input type="text" placeholder="Server Name"> -->
+<p>Hey Im {{serverName}} with {{serverId}} & {{serverStatus}}</p>
+<button [disabled]="buttonStatus" (click)="toggle()" >Property Binding</button>
