@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  serverName="Niroshan";
+  serverName="Niroshan_Ratnayake";
   serverId=1234567;
   serverStatus='Offline';
   statusFlag=false;
